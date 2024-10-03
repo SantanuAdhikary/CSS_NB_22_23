@@ -1,0 +1,34 @@
+
+.container > #para1::first-letter{
+    
+    font-size: 30px;
+    color:red;
+}
+
+.container > #para1::first-line{
+    color:green
+}
+
+::selection{
+    background-color: black;
+    color:white;
+}
+
+.container2 > ul > li::marker{
+  color:red
+}
+
+.container2 > ul >li:nth-child(2n)::marker{
+    color:green;
+}
+
+
+.container > h1::after{
+    content: "*";
+    color:red
+}
+
+.container > h1::before{
+    content: "**";
+    color:green;
+}

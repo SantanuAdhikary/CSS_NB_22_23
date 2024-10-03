@@ -1,0 +1,61 @@
+
+.container > button{
+    background-color: black;
+    color:white;
+}
+
+/*    hover */
+
+.container > button:hover{
+    background-color: red;
+}
+
+/* active */
+
+.container > button:active{
+    background-color: green;
+    color: blue;
+}
+/* first-child */
+
+/* .container > p:first-child{
+    color:red;
+} */
+
+
+/* last-child */
+
+/* .container > h1:last-child{
+    color:green;
+} */
+
+/*  first-of-type */
+
+.container > h1:first-of-type{
+
+    color:red;
+}
+
+/* last-of-type */
+
+.container > h1:last-of-type{
+    color:green;
+}
+
+
+.container > button:last-of-type{
+    background-color: red;
+}
+
+.container2 > ul >li:nth-child(2n){
+    color:green
+}
+
+.container2 > ul > li:nth-child(2n+1)
+{
+    color:red
+}
+
+.container2 > a:visited{
+    color:brown
+}

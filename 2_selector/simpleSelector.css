@@ -1,0 +1,34 @@
+/*! tagname selector */
+
+h1 {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+/* !  id selector */
+
+#para1 {
+  color: red;
+}
+
+/* ! class Selector */
+
+.para4 {
+  color: green;
+}
+
+/* ! group selector */
+
+#para1,
+.para4 {
+  background-color: bisque;
+}
+
+/* !  universal selector */
+
+* {
+  color: green;
+}

@@ -1,0 +1,26 @@
+
+
+/* Attribute Selector */
+
+.container > a[href] {
+
+    color:red;
+}
+
+
+.container2 > a[target="_blank"]{
+
+    color:green;
+}
+
+form input[type="text"]{
+    background-color: red;
+}
+
+form input[type="tel"]{
+    background-color: green;
+}
+
+form input[type="password"]{
+    background-color: blue;
+}

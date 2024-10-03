@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units</title>
+    <style>
+
+        .container2{
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            height: 300px;
+            width: 600px;
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        .container > .box1{
+
+            height: 50%;
+            width: 70%;
+            background-color: green;
+            border: 2px solid pink;
+        }
+
+        .container2 > .box3{
+            height: 50vh;
+            width: 50vw;
+            background-color: red;
+        }
+
+        .container3 {
+            height: 80vh;
+            background-color: green;
+        }
+
+        .container3 >.con{
+            height: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container3">
+
+        <div class="con"></div>
+
+    </div>
+
+    <div class="container2">
+
+        <div class="box3"></div>
+
+    </div>
+    
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

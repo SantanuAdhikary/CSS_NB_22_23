@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+*{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+
+    /* font-family: "Edu AU VIC WA NT Guides", cursive; */
+    /* font-style: italic; */
+}
+
+
+/* !  color */
+
+.container > h1{
+    color:red;
+}
+
+/* !  text-align */
+
+.container > p{
+    /* text-align: center; */
+    /* text-align: justify; */
+    /* text-align: left; */
+    text-align: right;
+}
+
+
+/* !  text-decoration */
+
+.container > a{
+    text-decoration: none;
+}
+
+.container >h2{
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    text-decoration-style: double;
+}
+
+/* !  text-transform */
+
+.container2 > h1{
+    text-transform: capitalize;
+}
+
+/* !  space property */
+
+.container2 > p{
+    text-indent: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* !  text-shadow */
+
+.container2 > h3{
+    text-align: center;
+    color:red;
+    text-transform: capitalize;
+    text-shadow: -2px -10px 2px black;
+}
