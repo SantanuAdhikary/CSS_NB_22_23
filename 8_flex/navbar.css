@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    height: 70px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items > ul {
+    display: flex;
+    list-style: none;
+    gap:15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttons > button{
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login{
+    background-color: burlywood;
+    color:white;
+}
+
+.signup{
+    background-color: aqua;
+    color:white;
+    margin-right: 20px;
+}
+
+.navbar > .logo{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+span{
+    color:red;
+    font-style: italic;
+}
+
+.list-items > ul > li{
+    font-weight: bold;
+   
+}
+
+.list-items > ul > li:hover{
+    color:gray
+}
