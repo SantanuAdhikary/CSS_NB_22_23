@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 900px;
+    border: 2px solid red;
+
+    background-color: red;
+    background-image: url("https://via.placeholder.com/300");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
