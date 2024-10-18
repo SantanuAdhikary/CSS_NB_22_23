@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex task </title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            height: 100vh;
+            background-color: beige;
+            display: flex;
+            gap:10px;
+        }
+
+        .container > .card{
+            border: 1px solid black;
+            flex-basis: 20%;
+            height: 300px;
+            padding: 20px;
+           
+        }
+
+        .container > .card > h1{
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .container > .card > p{
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .container > .card:nth-child(2)
+        {
+            flex-basis: 30%;
+            background-color: pink;
+        }
+
+        .container > .card:nth-child(3)
+        {
+            flex-basis: 25% ;
+            background-color: aliceblue;
+        }
+        .container > .card:nth-child(4)
+        {
+            flex-basis: 30% ;
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>card1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eum. Dolor itaque, recusandae esse possimus iure molestiae aliquam quas consectetur.</p>
+        </div>
+        <div class="card">
+            <h1>card2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eum. Dolor itaque, recusandae esse possimus iure molestiae aliquam quas consectetur.</p>
+        </div>
+        <div class="card">
+            <h1>card3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eum. Dolor itaque, recusandae esse possimus iure molestiae aliquam quas consectetur.</p>
+        </div>
+        <div class="card">
+            <h1>card4</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, eum. Dolor itaque, recusandae esse possimus iure molestiae aliquam quas consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>

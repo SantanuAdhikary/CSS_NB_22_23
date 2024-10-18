@@ -1,0 +1,30 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item > ul{
+    display: flex;
+   
+}
+
+.list-item > ul > li{
+    list-style: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.list-item > ul > li:last-of-type{
+    margin-right: 20px;
+}

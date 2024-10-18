@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex </title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 450px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            /* align-items: stretch; */
+            /* flex-wrap: wrap-reverse; */
+        }
+
+        .container > .box{
+            width: 75px;
+            border: 2px solid black;
+        }
+
+
+        .container > #box2{
+            order: 1;
+        }
+
+        .container > #box4{
+            order: 2;
+            flex-grow: 1;
+        }
+
+        .container > #box3{
+            flex-grow: 2;
+        }
+
+        .container > #box1{
+            flex-shrink: 2;
+            
+        }
+
+        .container > #box6{
+            align-self: flex-start;
+        }
+
+        .container2{
+            height: 400px;
+            background-color: red;
+            display: flex;
+            gap:20px
+        }
+
+        .container2 > .left{
+            flex-basis: 40%;
+            background-color: yellow;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .container2 > .right{
+            flex-basis: 50%;
+            background-color: green;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .left > .section{
+            height: 100px;
+            width: 100px;
+            background-color: azure;
+            border: 2px solid green;
+        }
+
+        .right > .section2{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">box-1</div>
+        <div class="box" id="box2">box-2</div>
+        <div class="box" id="box3">box-3</div>
+        <div class="box" id="box4">box-4</div>
+        <div class="box" id="box5">box-5</div>
+        <div class="box" id="box6">box-6</div>
+        <div class="box" id="box7">box-7</div>
+        <div class="box" id="box8">box-8</div>
+
+    </div>
+
+
+    <div class="container2">
+        <div class="left">
+
+            <div class="section">
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="section2"></div>
+
+        </div>
+    </div>
+</body>
+</html>

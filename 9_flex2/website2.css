@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner{
+    width: 900px;
+    background-color: white;
+    padding-block: 5px;
+    padding-inline: 30px;
+}
+
+
+/* style the navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.list-item > ul{
+    display: flex;
+    list-style: none;
+}
+
+
+/* style main */
+
+main{
+    display: flex;
+}
+
+main > .left{
+    flex-basis: 50% ;
+}
+
+
+/* footer style */
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .footer-right{
+    display: flex;
+    
+}

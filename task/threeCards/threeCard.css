@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.outer > .card{
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 2px 2px 3px black;
+}
+
+header > i{
+    font-size: 40px;
+}
+
+header{
+    margin-bottom: 15px;
+}
+
+main > h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+main > p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer > button{
+    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outer > #c1{
+    background-color: white;
+}
+
+.outer > #c2{
+    background-color: pink;
+    color:white
+}
+
+.outer > #c3{
+    background-color: cadetblue;
+    color:white;
+}
