@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer{
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outer > .inner{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    /* overflow: visible; */
+    
+
+    
+}
+
+.outer > .inner > h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color:red;
+    text-shadow: 2px 2px 2px black;
+}
+
+.outer > .inner > p{
+    font-size: 20px;
+}
+
+/* it is used to hide the scrollbar */
+
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+
