@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 200px;
+    background-color: red;
+}
+
+
+.container2{
+    height: 200px;
+    /* background-color: rgb(0, 255, 0); */
+    background-color: rgba(0, 255,0, 0.4);
+}
+
+.container3{
+    height: 200px;
+    background-color: #0000ff;
+}
+
+.container4{
+    height: 200px;
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+}

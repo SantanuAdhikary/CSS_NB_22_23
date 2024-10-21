@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .outer{
+        height: 100vh;
+        background: linear-gradient(to left,red,yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer > .inner{
+        width: 60%;
+        height: 60%;
+        background-image: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+
+         url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        transition: all 1s ease-in;
+    }
+
+    .outer > .inner:hover{
+        background-position: center;
+    }
+    </style>
+</head>
+<body>
+
+   <div class="outer">
+
+    <div class="inner">
+
+    </div>
+
+   </div>
+</body>
+</html>

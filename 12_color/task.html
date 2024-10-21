@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sections</title>
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.outer {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+#about h2 {
+    color: #3498db;
+}
+
+#skills h2 {
+    color: #e74c3c;
+}
+
+#projects h2 {
+    color: #2ecc71;
+}
+
+#contact h2 {
+    color: #9b59b6;
+}
+
+
+.section:hover {
+    background-color: #f7f7f7;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="outer">
+
+        <div class="inner">
+
+            <div class="section" id="about">
+                <h2>About Me</h2>
+                <p>I am a web developer with a passion for creating stunning websites.</p>
+            </div>
+
+            <div class="section" id ="skills">
+                <h2>Skills</h2>
+                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+
+            <div class="section" id="projects">
+                <h2>Projects</h2>
+                <p>Checkout my recent web development projects.</p>
+            </div>
+
+            <div class="section" id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to get in touch with me for collaborations.</p>
+            </div>
+        </div>
+    
+
+    </div>
+
+   
+</body>
+</html>
