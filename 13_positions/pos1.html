@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute and Relative Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(to right,red, yellow);
+        }
+
+        .outer > .inner{
+            height: 500px;
+            width: 500px;
+            background: linear-gradient(to right,blue,white);
+            box-shadow: 2px 0 4px rgba(0,0,0,0.5);
+           position: relative;
+        }
+
+        .inner > .box{
+            height: 80px;
+            width: 80px;
+           
+        }
+
+        #box1{
+            background-color: black;
+            position: absolute;
+        }
+        #box2{
+            background-color: green;
+            /* position: relative;
+            left:20px;
+            top:30px; */
+            position: absolute;
+            left:420px;
+
+        }
+        #box3{
+            background-color: lightcoral;
+            position: absolute;
+            left:420px;
+            top:420px;
+           
+        }
+        #box4{
+            background-color: lawngreen;
+            /* position: relative;
+            left:200px;
+            top:200px; */
+            top:420px;
+
+           
+            position: absolute;
+        }
+        #box5{
+            background-color: brown;
+            position: absolute;
+            left:50%;
+            top:50%
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+        </div>
+    </div>
+</body>
+</html>
