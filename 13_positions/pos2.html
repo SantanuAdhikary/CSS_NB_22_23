@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed and sticky</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        nav{
+            background-color: black;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            top:0;
+        }
+        section{
+            height: 400px;
+            background-color: red;
+        }
+
+        article{
+            height: 400px;
+            background-color: green;
+        }
+
+        main{
+            height: 700px;
+            background-color: bisque;
+        }
+
+        footer{
+            height: 200px;
+            background-color: black;
+        }
+
+        article>button{
+           padding:20px;
+           border-radius: 6px;
+           font-size: 20px;
+           font-weight: bold;
+           cursor: pointer;
+
+            /*  sticky */
+           position: sticky;
+           top:200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+
+    </nav>
+    <section>
+
+    </section>
+    <article>
+
+        <button>submit</button>
+
+    </article>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
