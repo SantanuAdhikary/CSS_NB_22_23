@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right,blue,white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer > .inner{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner >.box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    cursor: pointer;  
+    transition: all 2s ease-in;
+}
+
+.outer > .inner > .box:hover{
+
+    /* transform: translateX(-200px); */
+    /* transform: translateY(-200px); */
+
+    /* transform: translate(200px,200px); */
+
+    /* transform: rotate(360deg); */
+
+    /* transform: scale(2); */
+
+    /* transform: skew(180deg); */
+
+    transform-origin: top;
+    transform: rotate(90deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>

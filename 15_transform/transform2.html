@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tansform task</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer{
+            height: 100vh;
+            background-color: #212121;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:20px;
+        }
+
+        .outer > .box{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+     #box1{
+        transition: all 2s ease-in;
+     }
+
+     #box1:hover{
+        transform: translateX(90vw);
+     }
+     #box2{
+        transition: all 2s ease-out;
+     }
+
+     #box2:hover{
+        transform: translateX(90vw);
+     }
+     #box3{
+        transition: all 2s ease;
+     }
+
+     #box3:hover{
+        transform: translateX(90vw);
+     }
+     #box4{
+        transition: all 2s linear;
+     }
+
+     #box4:hover{
+        transform: translateX(90vw);
+     }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
